@@ -1,4 +1,6 @@
 function pow(x, y) {
+    if (y === '0') return 1;
+    if (y <= '0') return "введіть натуральне число";
     let result = x;
 
     for (let i = 1; i < y; i++) {
